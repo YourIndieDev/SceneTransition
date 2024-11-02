@@ -1,0 +1,17 @@
+{
+  "name": "com.indie.scenetransitioning",
+  "version": "1.0.0",
+  "displayName": "SceneTransitioning",
+  "description": "A versatile async scene transition and transition management for Unity.",
+  "unity": "2023.2.20f1",
+  "author": {
+    "name": "danejw",
+    "email": "",
+    "url": "yourindie.dev"
+  },
+  "dependencies": {
+    "com.unity.modules.core": "1.0.0",
+    "com.unity.ugui": "1.0.0",
+    "com.unity.modules.editor": "1.0.0"
+  }
+}
