@@ -23,7 +23,7 @@ namespace Indie
         [Header("Scene Management")]
         public List<SceneStatus> scenesInBuild; // List to hold all scenes in the build and their load states
 
-        private static SceneTransitionManager instance;
+        public static SceneTransitionManager instance;
 
         private void Awake()
         {
@@ -106,7 +106,7 @@ namespace Indie
             await SceneManager.UnloadSceneAsync(loadingSceneName);
         }
 
-        private async Task LoadSceneAsync(string sceneName)
+        public async Task LoadSceneAsync(string sceneName)
         {
             var asyncOp = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
             asyncOp.allowSceneActivation = true;
